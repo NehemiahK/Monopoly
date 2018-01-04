@@ -10,7 +10,7 @@ body{
     margin:auto;
     margin-top:10px;
     margin-bottom:10px;
-    
+
 }
 
 .board .cell{
@@ -44,7 +44,7 @@ body{
     height: 15.3%;
     width: 15.3%;
     background-size: contain;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
 }
 
 .board .game.cell.go{
@@ -59,6 +59,18 @@ body{
     background-image: url(../images/jail.jpg);
 }
 
+.player.jailed{
+    background-image:url(https://d30y9cdsu7xlg0.cloudfront.net/png/718334-200.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.player.onOwnProp{
+    background-image:url(https://cdn3.iconfinder.com/data/icons/social-media-2-3/256/Emoticon-512.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .board .game.cell.free-parking{
     background-image: url(../images/parking.png);
@@ -147,11 +159,9 @@ body{
 .board .game.cell .content{
     height:80%;
     width:100%;
-    
+
 }
-.player.removed{
-    display:none;
-}
+
 .board .cell:not(.top):not(.bottom) .title{
     height:100%;
     width:20%;
@@ -187,12 +197,10 @@ body{
 
 .player#player1 , .player1.cell .content {
     background-color: #389c36;
-
 }
 
 .player#player2 , .player2.cell .content{
     background-color: #364c9c;
-
 }
 
 .player#player3 , .player3.cell .content{
@@ -212,26 +220,6 @@ body{
 .board .dice.cell{
     background-color:white;
 }
-.player1 #player1{
-    background-image: url(../images/happy.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.player2 #player2{
-    background-image: url(../images/happy.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.player3 #player3{
-    background-image: url(../images/happy.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.player4 #player4{
-    background-image: url(../images/happy.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
 .dice-dot{
     display: inline-block;
@@ -245,10 +233,4 @@ body{
 
 .dice-dot.right{
     margin-left:36%;
-}
-
-.in-jail .jailed{
-    background-image: url(../images/sad.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }

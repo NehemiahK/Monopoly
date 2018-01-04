@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./css/common.css">
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
 		<script src="./js/monopoly.js" type="text/javascript"></script>
-		
+
 	</head>
 	<body>
         <div class="board">
@@ -23,7 +23,7 @@
                 <div id="cell29" class="top game cell chance"><div class="content"></div><div class="title"></div></div>
                 <div id="cell30" class="top game cell available property" data-group="group6"><div class="content"></div><div class="title"></div></div>
                 <div id="cell31" class="top right corner game cell go-to-jail"><div class="content"></div></div>
-                
+
                 <div id="cell20" class="game cell left available property" data-group="group4"><div class="content"></div><div class="title"></div></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
@@ -156,7 +156,7 @@
         </section>
         <section class="hidden templates" style="display:none;" >
 
-                
+
         </section>
         <div class="popup-lightbox" style="display:none;">
                 <div class="middle-center shadowed popup">
@@ -172,13 +172,21 @@
                                 <button id="no" class="clickable" >NO</button><br>
                                 <div class="invalid-error" >You don't have enough money...</div></div>
                                 </div>
-                       
+
                         <div id="jail" class="popup-page" style="display:none;">
                                 <div class="popup-title">Go to Jail!</div>
                                 <div class="popup-content">You miss 3 turns<br />
                                          <button id="ok" class="clickable">Bummer</button>
                                 </div>
                         </div>
+
+						<div id="broke" class="popup-page" style="display:none;">
+								<div class="popup-title">You're broke!</div>
+								<div class="popup-content">Goodbye.<br />
+										 <button id="ok" class="clickable">Sorry</button>
+								</div>
+						</div>
+
                         <div id="pay" class="popup-page" style="display:none;">
                                 <div class="popup-title">Pay up</div>
                                 <div class="popup-content">This property belongs to <span id="player-placeholder"></span><br>
@@ -200,12 +208,6 @@
                                         <button id="ok" class="clickable">OK</button>
                                 </div>
                         </div>
-                        <div id="broke" class="popup-page" style="display:none;">
-                                <div class="popup-title">You are broke! Yalla bye</div>
-                                        <button id="bye" class="clickable" >BYE</button>
-                        </div>
-                        </div>
-                </div>
                 </div>
         </div>
         </div>
